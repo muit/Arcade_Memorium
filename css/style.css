@@ -40,25 +40,17 @@ body {
 	height: 100%;
 	-webkit-backface-visibility: hidden ;
 	z-index: 2;
-	font-family: Georgia;
-	font-size: 3em;
-	text-align: center;
-	line-height: 200px;
 }
 
 .card_content .card .front {
 	position: absolute;
 	z-index: 1;
-	background: black;
-	color: white;
 	cursor: pointer;
 	background-image: url('../img/front.jpg');
 	background-size: 100% 100%;
 }
 .card_content .card .back {
 	-webkit-transform: rotatey(-180deg);
-	background: white;
-	color: black;
 	cursor: pointer;
 
 
