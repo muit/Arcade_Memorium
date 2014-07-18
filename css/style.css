@@ -5,11 +5,10 @@ body {
 	background-color: gray;
 	position: absolute;
 	height: auto;
-	width: 26%;
+	width: 354px;
 	text-align: center;
 	top: 100px;
-	margin-left: 35%;
-	margin-right: 35%;
+	margin-left: 37%;
 
 	border-radius: 5%;
 	box-shadow: inset 0 0 100px black;

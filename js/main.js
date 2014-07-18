@@ -1,6 +1,14 @@
-var CardSystem = {
-	cardTypes: [],
+window.addEventListener("load", function(){Mechanics.reset(); CardSystem.loadClickEvent();}, false);
 
+var CardSystem = {
+	loadClickEvent: function(){
+		$(".content").bind('click', function(event) {
+			var index = $(".card_content").index($(event.target).parent().parent());
+
+			if(index != -1)
+				Mechanics.showCard(index);
+		});
+	},
 	cards: [],
 
 	reset: function(){
@@ -100,7 +108,6 @@ var Mechanics = {
 	},
 	showCard: function(i){
 		var card = CardSystem.getCard(i);
-
 		if(card.show || (this.showedCard1 != undefined && this.showingCard2 != undefined))
 			return;
 
