@@ -150,9 +150,10 @@ var Mechanics = {
 
 	win: function(){
 		alert("Arcade Memorium: Complete!");
+		var _self = this;
 		setTimeout(function(){
 			CardSystem.flipAllCards();
-			this.reset();
+			_self.reset();
 		}, 5000 );
 	}
 }
